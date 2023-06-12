@@ -1,0 +1,54 @@
+WIDGETS;
+Consists of a root widget and then other ones nested within it.
+Each widget had its own programatic class that determines its behaviour and how its looks on 
+the screen
+
+Widget Tree; Descibes the structure of widgets inside your app
+Examples; text , button, row , column, image widgets,..etc
+E.g of properties of text widgets; style, textAlgin, overflow, maxLines..etc
+E.g Button widget; color, elevation, disabledColor, enabled,...etc
+
+Understanding the Different parts of a Default Flutter project
+
+MATERIALAPP WIDGET; A WRAPPER that allows us to create blank app
+and  use google design features inside our app
+
+pubspec.yaml is a config file for our project where we specify evinroment, dependencies assets, fonts,etc
+its format is very rigid;
+- for sub propertires muss be two spaces indented 
+ We need to alwayws speicify and update our pubspec.yaml on all changes we make
+
+note: at the end of return statements we use a semi-colon. e.g  return scaffold();
+Stateless vs Stateful Widgets
+in Stateless the state of the widget cany chnage overtime after state has been initialized
+while in stateful the state of the widget can change overtime
+
+Stateless widget enables hot reload
+It also enables code reuseability where we can create mulitple instances(objects) of our stateless widget
+Hot reload enables our program to refresh a code by only refreshing that stateless widget part of the code
+that changes have been made to
+
+Containers and Padding
+Containers contain widgets. when a color is added it takes up the whole space available to it until
+a child is added and it then takes the form and size of the child. e.g a text child
+Containers can have padding and margin. 
+Padding is the inside space within a container
+Margin is the outside space of a container
+
+we can make the padding generic by using it as the body's widget
+If you want to apply padding to a text widget then padding widget can be used
+If you want a container with margin aswell or a colourful container then container 
+can be used because padding doesnt all margin or colour
+
+ROWS
+A Row is a widget that can contain serval widgets inside of it. It enables us to have more than one child and hence
+uses 'children'property to create a list of widgets instead of child.
+
+to arrange or distribute the widgets in the row we use the main axis and cross axis where main axis is direction of widgets 
+and cross is the axis perpendicular to main. mainAxis has properties(methods) that can be used to align the widgets such as;
+spaceEvenly,SpaceAround,Star, Center,..etc
+Cross has properties such as strech,center, start,end(sets to baseline of bottomest widget edge)...etc
+
+COLUMNS 
+Used to stacking widgets upon one another(horizontally). Also has mainaxis and crossaxis.
+We can have a ROW as a child in our coluwn and vice versea
