@@ -52,3 +52,9 @@ Cross has properties such as strech,center, start,end(sets to baseline of bottom
 COLUMNS 
 Used to stacking widgets upon one another(horizontally). Also has mainaxis and crossaxis.
 We can have a ROW as a child in our coluwn and vice versea
+
+EXPANDED WIDGETS	
+Enables us to algin/sort multiple children widgets in a row/column by expanding(stretching) them.
+It has flex feature which uses value to determine the ratio of stretch given to each child. the higher the number the
+higher the expnaded size  in a row or column
+-We can wrap images in expanded widgets to avoid overflow and make image take up equal share
